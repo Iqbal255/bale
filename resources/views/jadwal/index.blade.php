@@ -1,179 +1,85 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jadwal FKOM 2025/2026 Ganjil</title>
-    <style>
-    body {
-            font-family: Arial, sans-serif;
-            background-color: #f3f3f3;
-            margin: 0;
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .sheet-container {
-            background-color: white;
-            border: 1px solid #ccc;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-            border-radius: 4px;
-            overflow-x: auto;
-            padding: 15px;
-        }
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            min-width: 900px;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 6px 8px;
-            text-align: left;
-            font-size: 13px;
-        }
-        th {
-            background-color: #f9f9f9;
-            font-weight: bold;
-            text-align: center;
-        }
-        tr:nth-child(even) { background-color: #fafafa; }
-        tr:hover td { background-color: #e8f0fe; }
-        .day {
-            background-color: #dfe6e9;
-            font-weight: bold;
-            text-align: center;
-            font-size: 14px;
-        }
-        .center {
-            text-align: center;
-        }
-        .sub {
-            font-size: 12px;
-            color: #555;
-        }
-    </style>
-</head>
-<body>
-    <h1>Jadwal Perkuliahan FKom 2025/2026 Ganjil</h1>
-    <div class="sheet-container">
-        <table>
-        <table>
-            <tr class="day"><td colspan="9">SENIN</td></tr>
-            <tr>
-                <th>WAKTU</th><th>S1 SI</th><th>R</th><th>WAKTU</th><th>D3 KA</th><th>R</th><th>WAKTU</th><th>S1 BD A</th><th>R</th>
-            </tr>
-            <tr>
-                <td>07.30 - 09.10</td><td></td><td></td><td>07.30-10.10</td><td>Pengantar Akuntansi</td><td>A211</td><td>07.30 - 10.00</td><td>Pengantar Manajemen & Bisnis</td><td>A205</td>
-            </tr>
-            <tr class="sub">
-                <td></td><td></td><td></td><td></td><td>Dr. Latifah Wulandari, S.E., M.M.</td><td></td><td></td><td>Armansyah Sarusu, S.Sos., M.M.</td><td></td>
-            </tr>
-            <tr>
-                <td>09.00 - 10.40</td><td>Pendidikan Agama Islam I</td><td>A204</td><td>10.10 - 11.50</td><td>Pengantar Manajemen & Bisnis</td><td>A211</td><td>10.20 - 12.00</td><td>Pengantar Akuntansi</td><td>A205</td>
-            </tr>
-            <tr class="sub">
-                <td></td><td>Dr. Yudhy, M.Ag</td><td></td><td></td><td>Dadang Dimyati, S.S., M.M.</td><td></td><td></td><td>Dr. Latifah Wulandari, S.E., M.M.</td><td></td>
-            </tr>
-            <tr><td>12.00 - 12.30</td><td colspan="8" class="center">Shalat Dzuhur</td></tr>
+@extends('layouts.app')
 
-            <tr class="day"><td colspan="9">SELASA</td></tr>
-            <tr>
-                <th>WAKTU</th><th>S1 SI</th><th>R</th><th>WAKTU</th><th>D3 KA</th><th>R</th><th>WAKTU</th><th>S1 BD A</th><th>R</th>
-            </tr>
-            <tr>
-                <td>08.20 - 10.00</td><td></td><td></td><td>07.30 - 10.00</td><td>PPN I (MS Office)</td><td>B303</td><td>07.30 - 10.00</td><td>Program Niaga I (MS Office)</td><td>B302</td>
-            </tr>
-            <tr class="sub">
-                <td></td><td></td><td></td><td></td><td>Encep Supriatna, S.E., S.Kom, M.M.</td><td></td><td></td><td>Kanda M. Ishak, M.Kom.</td><td></td>
-            </tr>
-            <tr>
-                <td>10.10 - 11.50</td><td>Pengantar Manajemen</td><td>Lab Jaringan</td><td>10.20 - 12.00</td><td>Pendidikan Agama Islam I</td><td>A210</td><td>10.10 - 11.50</td><td></td><td></td>
-            </tr>
-            <tr class="sub">
-                <td></td><td>Yelly A.M. Salam, Dra., M.M.</td><td></td><td></td><td>Asep Abdul Halim, S.Sos.I, M.M.</td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr><td>12.00 - 12.30</td><td colspan="8" class="center">Shalat Dzuhur</td></tr>
-            <tr>
-                <td>13.00 - 14.40</td><td></td><td></td><td>14.10 - 15.50</td><td>Bahasa Inggris I (For Accounting)</td><td>A210</td><td>12.30 - 14.20</td><td>Bahasa Inggris I (For Business)</td><td>A205</td>
-            </tr>
-            <tr class="sub">
-                <td></td><td></td><td></td><td></td><td>Riyadh Ahsanul Arifin, M.Pd.</td><td></td><td></td><td>Rahma Sakina, M.Pd.</td><td></td>
-            </tr>
-            <tr>
-                <td>14.50 - 16.30</td><td>Pengantar Sistem & Teknologi Informasi</td><td>Lab Jaringan</td><td colspan="6"></td>
-            </tr>
-            <tr class="sub">
-                <td></td><td>Nova Indrayana Yusman, M.Kom.</td><td></td><td colspan="6"></td>
-            </tr>
+@section('content')
+<div class="container mx-auto p-4">
+    <h1 class="text-2xl font-bold mb-4 text-center">Jadwal Perkuliahan FKom 2025/2026 Ganjil</h1>
 
-            <tr class="day"><td colspan="9">RABU</td></tr>
-            <tr>
-                <th>WAKTU</th><th>S1 SI</th><th>R</th><th>WAKTU</th><th>D3 KA</th><th>R</th><th>WAKTU</th><th>S1 BD A</th><th>R</th>
-            </tr>
-            <tr>
-                <td>08.20 - 10.00</td><td>Matematika Informatika</td><td>B301</td><td>08.20 - 10.00</td><td>Pendidikan Pancasila</td><td>A211</td><td>08.20 - 10.00</td><td>Pengantar Sistem & Teknologi Informasi</td><td>A205</td>
-            </tr>
-            <tr class="sub">
-                <td></td><td>Iin, M.Kom.</td><td></td><td></td><td>Ade Iskandar Nasution, S.H., M.H.</td><td></td><td></td><td>Muhamad Furqon, M.Kom.</td><td></td>
-            </tr>
-            <tr>
-                <td>10.10 - 11.00</td><td colspan="8" class="center">KPAM-I (AULA) - Haekal Pirous, S.T., M.A.B.</td>
-            </tr>
-            <tr><td>12.00 - 12.30</td><td colspan="8" class="center">Shalat Dzuhur</td></tr>
-            <tr>
-                <td>13.00 - 15.30</td><td>PPN I (MS Office)</td><td>B303</td><td>13.00 - 14.40</td><td>Matematika Ekonomi & Bisnis</td><td>A211</td><td>12.30 - 15.00</td><td>Pengantar Ilmu Ekonomi</td><td>A205</td>
-            </tr>
-            <tr class="sub">
-                <td></td><td>Encep Supriatna, S.E., S.Kom, M.M.</td><td></td><td></td><td>Ulya Rahmah, M.Agr.</td><td></td><td></td><td>Haekal Pirous, S.T., MBA</td><td></td>
-            </tr>
+    @if(session('success'))
+        <div class="bg-green-100 text-green-800 p-2 mb-3 rounded">{{ session('success') }}</div>
+    @endif
 
-            <tr class="day"><td colspan="9">KAMIS</td></tr>
-            <tr>
-                <th>WAKTU</th><th>S1 SI</th><th>R</th><th>WAKTU</th><th>D3 KA</th><th>R</th><th>WAKTU</th><th>S1 BD A</th><th>R</th>
-            </tr>
-            <tr>
-                <td>07.30 - 10.00</td><td>Logika dan Algoritma</td><td>A209</td><td>07.30 - 10.00</td><td></td><td></td><td>07.30 - 10.00</td><td></td><td></td>
-            </tr>
-            <tr class="sub">
-                <td></td><td>Tedi Budiman, S.Si., M.Kom.</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr>
-                <td>10.10 - 11.50</td><td>Bahasa Inggris I (For Computer)</td><td>A209</td><td>10.10 - 12.00</td><td>Logika dan Algoritma</td><td>A203</td><td>10.10 - 11.50</td><td></td><td></td>
-            </tr>
-            <tr class="sub">
-                <td></td><td>Riyadh Ahsanul Arifin, M.Pd.</td><td></td><td></td><td>Tedi Budiman, S.Si., M.Kom.</td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr><td>12.00 - 12.30</td><td colspan="8" class="center">Shalat Dzuhur</td></tr>
-            <tr>
-                <td>13.00 - 14.40</td><td>Aljabar Linier (Vektor & Matrik)</td><td>A209</td><td>12.30 - 13.20</td><td>Logika dan Algoritma</td><td>A203</td><td>12.30 - 13.20</td><td></td><td></td>
-            </tr>
-            <tr class="sub">
-                <td></td><td>Dr. H. Marlan, M.Eng.Sc.</td><td></td><td></td><td>Tedi Budiman, S.Si., M.Kom.</td><td></td><td></td><td></td><td></td>
-            </tr>
-            <tr>
-                <td>15.30 - 17.10</td><td>Pengantar Akuntansi</td><td>A209</td><td>15.20 - 17.00</td><td></td><td></td><td>15.20 - 18.00</td><td>Logika dan Algoritma</td><td>A205</td>
-            </tr>
-            <tr class="sub">
-                <td></td><td>Faisal Rakhman, S.E., M.M.</td><td></td><td></td><td></td><td></td><td></td><td>Tedi Budiman, S.Si., M.Kom.</td><td></td>
-            </tr>
+    <div class="mb-4 flex gap-3">
+        <input id="searchInput" type="text" placeholder="Cari (hari, dosen, mata kuliah...)" class="border p-2 rounded w-1/3">
+        <select id="filterDay" class="border p-2 rounded">
+            <option value="">Semua Hari</option>
+            @foreach(['Senin','Selasa','Rabu','Kamis','Jumat','Sabtu','Minggu'] as $d)
+                <option value="{{ $d }}">{{ $d }}</option>
+            @endforeach
+        </select>
 
-            <tr class="day"><td colspan="9">JUMAT</td></tr>
-            <tr>
-                <th>WAKTU</th><th>S1 SI</th><th>R</th><th>WAKTU</th><th>D3 KA</th><th>R</th><th>WAKTU</th><th>S1 BD</th><th>R</th>
-            </tr>
-            <tr>
-                <td>07.30 - 09.00</td><td>KJP</td><td></td><td>07.30 - 09.00</td><td>KJP</td><td></td><td>07.30 - 09.00</td><td>KJP</td><td></td>
-            </tr>
-            <tr class="sub">
-                <td></td><td>Kelompok Studi Islam</td><td></td><td></td><td>Kelompok Studi Islam</td><td></td><td></td><td>Kelompok Studi Islam</td><td></td>
-            </tr>
-            <tr>
-                <td>11.10 - 13.00</td><td colspan="8" class="center">Shalat Jumat</td>
-            </tr>
+        @auth
+        <a href="{{ route('jadwal.create') }}" class="ml-auto bg-indigo-600 text-white px-3 py-2 rounded">Tambah Jadwal</a>
+        @endauth
+    </div>
+
+    <div class="overflow-auto bg-white rounded shadow p-4">
+        <table id="jadwalTable" class="min-w-full border-collapse">
+            <thead>
+                <tr class="bg-gray-100">
+                    <th class="p-2 border">Hari</th>
+                    <th class="p-2 border">Waktu</th>
+                    <th class="p-2 border">Mata Kuliah</th>
+                    <th class="p-2 border">Dosen</th>
+                    <th class="p-2 border">Ruang</th>
+                    <th class="p-2 border">Shift</th>
+                    @auth
+                    <th class="p-2 border">Aksi</th>
+                    @endauth
+                </tr>
+            </thead>
+            <tbody>
+                @foreach($jadwals as $j)
+                    <tr class="hover:bg-blue-50">
+                        <td class="p-2 border">{{ $j->hari }}</td>
+                        <td class="p-2 border">{{ $j->waktu_mulai }} {{ $j->waktu_selesai ? '- '.$j->waktu_selesai : '' }}</td>
+                        <td class="p-2 border">{{ $j->mataKuliah->nama ?? '-' }}</td>
+                        <td class="p-2 border">{{ $j->dosen->nama ?? '-' }}</td>
+                        <td class="p-2 border">{{ $j->ruang->nama ?? '-' }}</td>
+                        <td class="p-2 border">{{ $j->shift->nama ?? '-' }}</td>
+                        @auth
+                        <td class="p-2 border">
+                            <a href="{{ route('jadwal.edit', $j) }}" class="text-indigo-600 mr-2">Edit</a>
+                            <form action="{{ route('jadwal.destroy', $j) }}" method="POST" style="display:inline" onsubmit="return confirm('Hapus jadwal ini?')">
+                                @csrf @method('DELETE')
+                                <button class="text-red-600">Hapus</button>
+                            </form>
+                        </td>
+                        @endauth
+                    </tr>
+                @endforeach
+            </tbody>
         </table>
     </div>
-</body>
-</html>
+</div>
+
+<script>
+    const searchInput = document.getElementById('searchInput');
+    const filterDay = document.getElementById('filterDay');
+    const rows = Array.from(document.querySelectorAll('#jadwalTable tbody tr'));
+
+    function applyFilters() {
+        const q = (searchInput.value || '').toLowerCase();
+        const day = (filterDay.value || '').toLowerCase();
+
+        rows.forEach(r => {
+            const text = r.innerText.toLowerCase();
+            const matchQ = !q || text.includes(q);
+            const matchDay = !day || text.includes(day);
+            r.style.display = (matchQ && matchDay) ? '' : 'none';
+        });
+    }
+
+    searchInput.addEventListener('input', applyFilters);
+    filterDay.addEventListener('change', applyFilters);
+</script>
+@endsection
